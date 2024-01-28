@@ -23,8 +23,8 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
 ADD --chown=steam:steam --chmod=755 servermanager.sh /servermanager.sh
 ADD --chown=steam:steam --chmod=755 backupmanager.sh /backupmanager.sh
 
-EXPOSE 8211/udp
-EXPOSE 25575/tcp
+EXPOSE 8222/udp
+EXPOSE 25576/tcp
 
 RUN mkdir /palworld \
     && chown steam:steam /palworld
